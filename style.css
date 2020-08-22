@@ -13,7 +13,9 @@
     background-color: red;
     position: relative;
     top: 150px;
-    animation: jump 500ms infinite;
+}
+.animate{
+    animation: jump 500ms ;
 }
 #block{
     height: 20px;
