@@ -14,6 +14,6 @@ var checkdead = setInterval(function(){
     if(blockleft<20 && blockleft>0 && characterTop>=130){
         block.style.animation="none";
         block.style.display="none";
-        alert("You are definately not good in games !!\nWell you can refresh the page to play again");
+        alert("You are definately not good in games !!\nWell, You can refresh the page to play again");
     }
 },10)
