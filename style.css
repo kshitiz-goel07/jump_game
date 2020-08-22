@@ -1,30 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+/*===== z index =====*/
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+:root{
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+/* Colores */
+:root{
+  --first-color: #4070F4;
+  --second-color: #0E2431;
+}
+
+/*Fuente y tipografia */
+:root{
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #fff;
+    background-color: #1f2029;
+    overflow-x: hidden;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+  width: 100%;
+  position: center;
+  justify-content: center;
+}
+.main{
+    background-color: #1f2029;
+    overflow-x: hidden;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+  width: 100%;
+  position: center;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+    min-height: 100%;
+}
 *{
     padding: 0;
     margin: 0;
 }
 #game{
-    height: 200px;
-    width: 500px;
-    border: 4px solid black;
+    height: 400px;
+    width: 700px;
+    border: 2px solid black;
+    background-image: url(game.jpg);
+    background-size: cover;
 }
 #character{
-    height: 50px;
-    width: 20px;
-    background-color: red;
+    height: 200px;
+    width: 100px;
+    background-image: url('walk.png');
+    background-size: 100% 100%;
     position: relative;
-    top: 150px;
+    top: 190px;
 }
 .animate{
     animation: jump 500ms ;
 }
 #block{
-    height: 20px;
-    width: 20px;
-    background-color: blue;
+    height: 50px;
+    width: 50px;
+    background-image: url('rat.png');
+    background-size: cover;
     position: relative;
-    top: 130px;
+    top: 165px;
     left: 480px;
-    animation: block 1s infinite linear;
+    animation: block 2s infinite linear;
+}
+.link-to-page {
+     position: fixed;
+     top: 30px;
+     right: 30px;
+     z-index: 20000;
+     cursor: pointer;
+     width: 50px;
+ }
+ .link-to-page img{
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+ /* ===== FOOTER =====*/
+.footer{
+  background: url();
+  background-size: cover;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 3rem 0;
+}
+.footer__title{
+  font-size: 4rem;
+  color: #eece1a;
+  margin-bottom: var(--mb-4);
+
+
+}
+.footer__social{
+  margin-bottom: var(--mb-4);
+}
+.footer__social a:hover {
+  color: #eece1a;
+  transition: all 0.3s ease-out; 
+}
+.footer__icon{
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 var(--mb-2)
 }
 @keyframes block{
     0%{left: 480px;}
