@@ -1,12 +1,11 @@
 # jump_game
  Basic Game !! Made with help of HTML/CSS/JS
  
- <div class="text-red mb-2">
- Steps To Play Game:-
-</div>
-1: Right Click or Touch Screen(FOR JUMP) 
-
-2: Follow Step 1
+ <h1>Steps To Play Game:-</h1>
+<pre>
+1: Right Click or Touch Screen(FOR JUMP)<br> 
+2: Follow Step 1<br>
 3: Follow Step 2
+</pre>
 
  # [PLAY GAME]( https://kshitiz-goel07.github.io/jump_game/)
