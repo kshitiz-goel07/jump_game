@@ -11,9 +11,12 @@ character.classList.remove("animate");
 var checkdead = setInterval(function(){
     var characterTop=parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockleft=parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if(blockleft<68 && blockleft>0 && characterTop>=161){
+    if(blockleft<68 && blockleft>0 && characterTop>=170){
         block.style.animation="none";
         block.style.display="none";
         alert("You are definately not good in games !!\nWell, You can refresh the page to play again");
+        // <div class="alert alert-danger">
+        //     You are definately not good in games !!Well, You can refresh the page to play again
+        // </div>
     }
 },10)
