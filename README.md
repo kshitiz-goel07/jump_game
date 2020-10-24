@@ -3,7 +3,7 @@
  
  <h1>Steps To Play Game:-</h1>
 <pre>
-1: Right Click or Touch Screen(FOR JUMP)<br> 
+1: Right Click or Touch Screen( FOR JUMP )<br> 
 2: Follow Step 1<br>
 3: Follow Step 2
 </pre>
